@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Название</title>
+
+    <meta name="description" content="Название">
+    <meta name="author" content="автор">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <link rel="stylesheet" href="css/hljs/vs.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="footer">
+            <span class="corp-name"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNAUMEN</b>
+        </div>
+
+        <div class="slides">
+            <section>
+                <h1>Вводная лекция</h1>
+                <h1 style="color:orangered;">Что такое Scala?</h1>
+                <div style="position: relative; right: 0;">Дмитрий Быков</div>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Про курс</h1>
+				<br><br><br>
+                <ul>
+                    <li><strong style="color:orangered;">Введение в Scala</strong>, включая все необходимые аспекты для написания простых программ</li><br>
+                    <li><strong style="color:orangered;">Функциональное программирование</strong> с прицелом на практическое применение</li><br>
+                    <li><strong style="color:orangered;">ZIO</strong> для реализации web-приложений и информационных систем</li><br>
+					<li>Для желающих - <strong style="color:orangered;">проектная работа</strong> с код-ревью от профессиональных разработчиков</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Структура курса</h1>
+				<br>
+				<h3><p><b>III блока:</b></p></h3>
+				<ul>
+                    <li><strong style="color:orangered;">Scala Basic</strong>, чтобы освоить/освежить представление о синтаксисе и конструкциях языка</li>
+                    <li><strong style="color:orangered;">Функциональное программирование</strong>, для демонстрации практической пользы ФП</li>
+					<li><strong style="color:orangered;">ZIO</strong>, чтобы освоить основы современного фреймворка для создания web-систем</li>
+                </ul>
+				<br><br>                
+                <ul>
+                    <li><strong style="color:orangered;">В каждом блоке:</strong> 2 - 3   лекции; 1 - 3 практических занятия</li>
+					<li><strong style="color:orangered;">Всего:</strong> 8 лекций помимо вводной; 4 практических занятия</b></p></li>
+                </ul>
+				<p><b>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">Домашние задания</h1>
+				<br><br>
+                <ul>
+                    <li>После каждой лекции набор упражнений и задачек</li><br>
+                    <li>Для большинства из них надо писать тесты</li><br>
+                    <li>Срок сдачи - неделя после анонса ДЗ в чате</li><br>
+                    <li>Формат сдачи - удаленно (github)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">Практика</h1>
+				<br><br>
+                <ul>
+                    <li>Простые упражнения для закрепления лекций</li><br>
+					<li>Проектная работа (для желающих)</li><br>
+                    <li>Ответы на вопросы по разработке на Scala</li><br>
+					<li>Тренировочные собеседования по итогам курса</li>
+                </ul>
+            </section>
+        </div>
+		<div class="slides">
+            <section>
+                <h1 style="color:orangered;">Проектная работа</h1>
+				<br><br>
+                <ul>
+                    <li>Факультативно, по желанию</li><br>
+					<li>Старт - после блока Scala Basic</li><br>
+                    <li>Ревью от опытных разработчиков</li><br>
+					<li>Небольшое портфолио в резюме</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Зачет:</h1>
+                <p style="color:orangered;"><b>Посещать занятия!</b><b>&nbsp&nbsp&nbspСдавать ДЗ!</b></p>
+                <br>
+                <h2>Условия сдачи курса:</h2>
+				<br>
+                <ul>
+                    <li>В идеале, <strong style="color:orangered;">выполнение всех ДЗ и посещение всех лекций = "Автомат"</strong></li><br>
+					<li>Общая сумма пропущенных (ДЗ + Занятий) <strong style="color:orangered;">не превышает трёх = Возможно, "Автомат"</strong></li><br>
+					<li>Общая сумма пропущенных (ДЗ + Занятий) превышает половину = Недопуск до экзамена</li><br>
+					<li>В остальных случаях = Сдача экзамена</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">Взаимодействие на курсе</h1>
+				<br>
+				<h2>VK и telegram</h2>
+                <ul>
+					<li>ссылка на телеграм на Портале</li><br>
+                    <li style="color:orangered;">https://vk.com/naumen_students</li><br>
+                </ul>
+            </section>
+        </div>
+		<div class="slides">
+            <section>
+                <h1 style="color:orangered;">Взаимодействие на курсе</h1>				
+				<ul>
+					<br><h3 style="float:left;">Портал:</h3><img style="height: auto; float:right;" src="img/lecture_1/qr_code.jpg">
+                    <li style="color:orangered;">https://study.naumen.ru/</li>
+					<br><br>
+					<ul>
+						<li>Анонсы занятий</li><li>Ссылки на подключение</li><li>Домашние задания</li><li>Записи с лекций и презентации</li><li>Дополнительные рекомендации</li>
+					<ul>					
+                </ul>
+            </section>
+        </div>
+		<div class="slides">
+            <section>
+                <h1 style="color:orangered;">Взаимодействие на курсе</h1>	
+				<br>
+				<ul>
+					<h2>Github:</h2>
+                    <li style="color:orangered;">https://naumen-student.github.io/naumen.scala.course.2024.spring</li>
+					<ul>
+						<li>Сдача домашних заданий</li><li>Ревью</li>
+					<ul>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">Что дает курс</h1>
+				<br>
+                <ul>
+                    <li><strong>Если вы будущий Scala разработчик:</strong><br><br>
+                        <ul>
+                            <li>Практические навыки <strong style="color:orangered;">Scala</strong></li>
+							<li>Практические навыки <strong style="color:orangered;">ZIO</strong></li>
+							<li>Понимание <strong style="color:orangered;">практического назначения ФП</strong></li>
+                            <li>Возможность попасть на <strong style="color:orangered;">стажировку в Naumen</strong></li>
+                            <li>Возможность реализации <strong style="color:orangered;">проектной работы для портфолио</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">Что дает курс</h1>
+				<br>
+                <ul>
+                    <li><strong>Если вы НЕ Scala разработчик:</strong><br><br>
+                        <ul>
+                            <li><strong style="color:orangered;">Современные подходы</strong> и фичи языков</li>
+                            <li>Опыт от <strong style="color:orangered;">практикующих разработчиков</strong></li>
+                            <li>Пункты <strong style="color:orangered;">"Scala" и "ZIO" в резюме</strong></li>
+							<li>Понимание <strong style="color:orangered;">практического назначения ФП</strong></li>
+                            <li>Возможность реализации <strong style="color:orangered;">проектной работы для портфолио</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">История Scala</h1>
+				<br>
+                <h4>Создатель языка - <strong style="color:orangered;">Мартин Одерски (Martin Odersky)</strong></h4>
+				<br>
+                <ul>
+                    <li>Ученый-практик из Швейцарии</li><br>
+                    <li>Всю жизнь занимается языками, компиляторами,<br>проблемами вычислимости и корректности программ</li><br>
+                    <li>Scala далеко не единственный и не первый</li><br>
+                    <li>Разработал большую часть javac и Java Generics</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1 style="color:orangered;">История Scala</h1>
+				<br>
+                <h3>Временные вехи</h3>
+				<br>
+                <ul>
+                    <li>Старт разработки - 2001</li>
+                    <li style="color:orangered;">Первый публичный релиз - январь 2004</li>
+                    <li>Scala 2.0 - март 2006</li>
+                    <li>Twitter - апреле 2009</li>
+                    <li>Версия 2.8.0 - июль 2010 (коллекции, именованные и параметры по умолчанию)</li>
+                    <li>Версия 2.10.0 - январь 2013 (много фич которые сейчас стали основными)</li>
+                    <li style="color:orangered;">Scala 3 - май 2021</li>
+					<li><strong style="color:orangered;">Расцвет экосистемы и рост популярности языка</strong> - сейчас и в будущем</li>
+                </ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>С одной стороны...</h1>
+				<br><br>
+                <li>Scala - это обычный <div style="color:orangered;">современный язык программирования высокого уровня работающий на ВМ/платформе</div></li><br>
+                <li>Большинство того что возможно и <div style="color:orangered;">что успешно делается на этих языках - можно делать и на Scala</div></li>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>С другой стороны...</h1>
+                <br>
+				<p style="color:orangered;">Scala обладает рядом преимуществ:</p>
+				<br>
+				<ul>
+					<li>JVM и Java interoperability</li><br>
+					<li>ООП + ФП;&nbsp&nbsp&nbspВрождённое / Органичное ФП</li><br>
+					<li>Продвинутые языковые фичи</li><br>
+					<li>Экосистема</li><br>
+					<li style="color:orangered;">Попробовать Scala легко, завязать со Scala сложно )</li>
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Особенности языка</h1>
+				<br>
+                <h3 style="color:orangered;">JVM и Java interoperability</h3>
+                <p>JVM - высококачественная <strong style="color:orangered;">(производительность)</strong> и<br>популярная платформа <strong style="color:orangered;">(компетенции + инструментарий)</strong></p><br>
+                <p>Но запускаться на JVM мало (JRuby, Jython, Clojure, Ceylon, etc)</p><br>
+                <p><strong style="color:orangered;">Interoperability</strong> - путь к библиотекам и экосистеме</p><br>
+				<p>Можно запускать <strong style="color:orangered;">Java код из исходников напрямую в Scala</strong> файлах</p>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Особенности языка</h1>
+                <h3 style="color:orangered;">ООП + ФП</h3>
+				<ul>
+					<li><strong style="color:orangered;">Можно</strong> на чистом <strong style="color:orangered;">ООП</strong> (как в Java, C#, Python, Typescript и т.д.); <strong style="color:orangered;">Продвинутый ООП</strong></li><br>
+					<li><strong style="color:orangered;">ООП</strong> - Доминирующая парадигма, - множеству людей <strong style="color:orangered;">удобно</strong> писать в этом стиле</li><br>
+					<li>Можно на удобном, <strong style="color:orangered;">органичном и чистом (почти) ФП</strong></li><br>
+					<li>Можно плавно <strong style="color:orangered;">переходить от ООП к ФП</strong></li>
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Функциональное программирование</h1>
+				<br>
+                <h3>Делает код <strong style="color:orangered;">прозрачным и понятным</strong></h3>
+				<br>
+				<ul>
+					<li><strong style="color:orangered;">Удобство и безопасность</strong> в конкуретной (многопоточной среде)</li><br>
+					<li><strong style="color:orangered;">Явная обработка ошибок</strong> на уровне кода</li><br>
+					<li><strong style="color:orangered;">Унификация</strong> написания кода</li><br>
+					<li><strong style="color:orangered;">Ленивость</strong> вычислений</li><br>
+					<li>Возможность применения <strong style="color:orangered;">паттернов ФП</strong> (ADT, тайп-классы и т.п.)</li>
+				</ul>
+            </section>
+        </div>
+		<div class="slides">
+            <section>
+                <h1>ZIO</h1>
+				<p>ZIO - самодостаточная библиотека для <strong style="color:orangered;">конкуррентного и асинхронного</strong> программирования на Scala</p>
+				<br>
+				<ul>					
+					<li><strong style="color:orangered;">Производительность:</strong> ZIO намного быстрее, чем Scala Future</li><br>
+					<li>Отмена и время ожидания: ZIO <strong style="color:orangered;">позволяет отменять эффекты вручную или автоматически</strong></li><br>
+					<li><strong style="color:orangered;">Безопасность ресурсов:</strong> ZIO позволяет безопасно получать и освобождать ресурсы</li><br>
+					<li>Согласованность: <strong style="color:orangered;">параллельность ZIO построена на волокнах,<br>которые являются легкими зелеными нитями</strong></li><br>
+					<li>ZIO является <strong style="color:orangered;">чисто функциональным</strong></li><br>
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>&nbsp&nbsp&nbsp&nbspАдоптеры <strong style="color:orangered;">Scala</strong></h1>
+                <h3 style="color:orangered;">&nbsp&nbsp&nbsp&nbspОсновной стек:</h3>
+				<br>
+				<ul>
+					<li>&nbsp&nbsp&nbsp&nbspX&nbsp&nbsp&nbsp&nbsp(X-Twitter)</li> 
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLinkedIn</li> 
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТинькофф</li><br>
+					<li>и другие</li> 
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Адоптеры <strong style="color:orangered;">Scala:</strong></h1>
+                <h3 style="color:orangered;">Используют:</h3>
+				<br>
+				<ul>
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspApple</li> 
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAirbnb</li> 
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCoursera</li> 
+					<li>&nbsp&nbsp&nbsp&nbspДелибомиль</li> 
+					<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСбербанк </li><br>
+					<li>и многие другие</li>
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Адоптеры</h1>
+				<br><br>
+                <h3 style="color:orangered;">Важно потому, что:</h3>
+				<ul>
+					<li>Гарантия <strong style="color:orangered;">стабильности</strong> языка</li><br>
+					<li><strong style="color:orangered;">Развитие</strong> экосистемы (вкладываются непосредственно в язык/компилятор,<br> либо открывают свои наработки, либо коммитят в другой open source)</li><br>
+					<li><strong style="color:orangered;">Вакансии</strong> для разработчиков</li><br>
+					<li>Источник <strong style="color:orangered;">компетенций</strong></li>
+				</ul>
+            </section>
+        </div>
+        <div class="slides">
+            <section>
+                <h1>Инструменты</h1>
+				<br><br>
+				<ul>
+					<li>REPL - <a style="color:orangered;">https://downloads.lightbend.com/scala/2.12.10/scala-2.12.10.msi</a></li> 
+					<li>Ammonite REPL (only Linux/Mac) - <a style="color:orangered;">https://ammonite.io/#Ammonite-REPL</a></li> 
+					<li>Scastie - online worksheet and code share - <a style="color:orangered;">https://scastie.scala-lang.org/</a></li> 
+					<li>IDE - <strong style="color:orangered;">IntelliJ Idea</strong> (with Scala plugin)</li> 
+					<li>VS Code (with Metals plugin)</li> 
+					<li>Worksheet (in Scastie or Idea)</li> 
+					<li>Cheatsheet <a style="color:orangered;">https://alvinalexander.com/downloads/scala/Scala-Cheat-Sheet-devdaily.pdf</a></li> 
+				</ul>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                {
+                    src: 'lib/js/classList.js', condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                        return !!document.querySelector('pre code');
+                    }, callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+
+        window.addEventListener("mousedown", handleClick, false);
+        window.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+
+        function handleClick(e) {
+            e.preventDefault();
+            if (e.button === 0) Reveal.next();
+            if (e.button === 2) Reveal.prev();
+        }
+    </script>
+
+</body>
+
+</html>
