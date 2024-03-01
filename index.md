@@ -5,7 +5,7 @@ layout: default
 
 ### Лекции
 
-* Лекция 1. [Что такое Scala?](lectures/scala_lecture_1.html
+* Лекция 1. [Что такое Scala?](lectures/scala_lecture_1.html)
 
 
 ### Домашние задания
