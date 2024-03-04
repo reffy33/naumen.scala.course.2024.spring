@@ -1,0 +1,60 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\reffy> scala
+Welcome to Scala 3.4.0 (11.0.22, Java OpenJDK 64-Bit Server VM).
+Type in expressions for evaluation. Or try :help.
+
+scala> var helloMessage: String = "Hello, Scala! This is Dimo4ka"
+var helloMessage: String = Hello, Scala! This is Dimo4ka
+
+scala> print(helloMessage)
+Hello, Scala! This is Dimo4ka~
+
+scala> var spanishMessage = helloMessage.replaceFirst("Hello", "Hola")
+var spanishMessage: String = Hola, Scala! This is Dimo4ka
+
+scala> print(spanishMessage)
+Hola, Scala! This is Dimo4ka~
+
+scala> var frenchMessage = helloMessage.replaceFirst("Hello", "Bonjoir")
+var frenchMessage: String = Bonjoir, Scala! This is Dimo4ka
+
+scala> print(frenchMessage)
+Bonjoir, Scala! This is Dimo4ka~
+
+scala> var name = "Dimo4ka"
+var name: String = Dimo4ka
+
+scala> var nameReversed = name.reverse
+var nameReversed: String = ak4omiD
+
+scala> helloMessage = helloMessage.replaceFirst(name, nameReversed)
+helloMessage: String = Hello, Scala! This is ak4omiD
+
+scala> spanishMessage = spanishMessage.replaceFirst(name, nameReversed)
+spanishMessage: String = Hola, Scala! This is ak4omiD
+
+scala> frenchMessage = frenchMessage.replaceFirst(name, nameReversed)
+frenchMessage: String = Bonjoir, Scala! This is ak4omiD
+
+scala> println(helloMessage, spanishMessage, frenchMessage)
+-- [E134] Type Error: ----------------------------------------------------------
+1 |println(helloMessage, spanishMessage, frenchMessage)
+  |^^^^^^^
+  |None of the overloaded alternatives of method println in object Predef with types
+  | (x: Any): Unit
+  | (): Unit
+  |match arguments ((helloMessage : String), (spanishMessage : String), (frenchMessage : String))
+1 error found
+
+scala> println(helloMessage)
+Hello, Scala! This is ak4omiD
+
+scala> println(spanishMessage)
+Hola, Scala! This is ak4omiD
+
+scala> println(frenchMessage)
+Bonjoir, Scala! This is ak4omiD

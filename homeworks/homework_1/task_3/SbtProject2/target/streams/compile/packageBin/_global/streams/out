@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\sbtproject2_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example\Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example\Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example\run.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example\run.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example\run.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\reffy\code\SbtProject2\target\scala-3.4.0\classes\example\run.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
